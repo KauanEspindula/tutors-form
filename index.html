@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authot" content="Kauan Silva de Espindula" />
+
+    <title>Mentoria</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+
+        <p>Preencha o formulário abaixo para agendar sua mentoria</p>
+      </header>
+
+      <form id="main-form">
+        <fieldset>
+          <legend>Informações pessoais</legend>
+
+          <div class="input-flex-top">
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                title="Digite seu nome"
+                maxlength="25"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="last-name">Sobrenome</label>
+
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                title="Digite seu sobrenome"
+                maxlength="25"
+              />
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="email"
+              >Email <span>(digite um email válido)</span></label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="70"
+              title="Digite seu email"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="password"
+              >Senha <span>(mínimo de 6 caracteres)</span></label
+            >
+
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="6"
+              maxlength="40"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações do mentor</legend>
+
+          <div class="input-wrapper">
+            <label for="tutor-name"
+              >Nome do seu mentor <span>(só o primeiro nome)</span></label
+            >
+
+            <input
+              list="list-name"
+              type="text"
+              id="tutor-name"
+              name="tutor-name"
+              maxlength="20"
+              title="Digite o nome do seu mentor"
+            />
+
+            <datalist id="list-name">
+              <option value="Alberto"></option>
+              <option value="Adriana"></option>
+              <option value="Bruno"></option>
+              <option value="Carla"></option>
+              <option value="Shinzato"></option>
+            </datalist>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Seus horários disponíveis</legend>
+
+          <div class="input-flex-bottom">
+            <div class="input-wrapper">
+              <p class="sub-legend">
+                Primeira mentoria
+                <label for="first-date">Data <span>(DD/MM/AAAA)</span></label>
+              </p>
+
+              <input
+                onfocus="(this.type='date')"
+                id="first-date"
+                name="first-date"
+                title="Coloque a data seguindo a ordem DD/MM/AAAA"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="from">Das</label>
+
+              <input
+                onfocus="(this.type='time')"
+                id="from"
+                name="from"
+                title="Coloque o horario de inicio da mentoria"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="to">Até</label>
+
+              <input
+                onfocus="(this.type='time')"
+                id="to"
+                name="to"
+                title="Coloque a hora do fim da mentoria"
+              />
+            </div>
+          </div>
+
+          <div class="input-flex-bottom">
+            <div class="input-wrapper">
+              <p class="sub-legend">
+                Segunda mentoria
+                <label for="second-date">Data <span>(DD/MM/AAAA)</span></label>
+              </p>
+
+              <input
+                onfocus="(this.type='date')"
+                id="second-date"
+                name="second-date"
+                title="Coloque a data seguindo a ordem DD/MM/AAAA"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="from-second">Das</label>
+              <input
+                onfocus="(this.type='time')"
+                id="from-second"
+                name="from-second"
+                title="Coloque a hora do inicio da mentoria"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="to-second">Até</label>
+              <input
+                onfocus="(this.type='time')"
+                id="to-second"
+                name="to-second"
+                title="Coloque a hora do fim da mentoria"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="btn-div">
+        <button aria-label="Salvar" form="main-form" title="Clique para salvar">
+          Salvar
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
