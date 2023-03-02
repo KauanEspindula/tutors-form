@@ -37,6 +37,18 @@
 
 <br />
 
+Este projeto teve como objetivo a consolidação do aprendizado da  criação, semanticação e estilização de formulários usando HTML e CSS.
+
+<br /> 
+
+Aqui aprendi a utilização dos seguintes termos: 
+
+- <code>form</code> que serve para escrevermos um formuário de forma semântica e com uma sintaxe correta. Temos o atributo <code>method</code> que determina qual metodo estamos utilizando, não utilizei neste projeto mas tomei conhecimento deles, <code>GET</code>, <code>POST</code>, <code>PUT</code> e <code>PATCH</code>
+
+- <code>fieldset</code> para utilizarmos mais de um <code>input</code> e separarmos cada conjunto de <code>input</code>s para determinado tema. 
+
+
+
 ## <strong>📑 Layout</strong>
 
 <br />
